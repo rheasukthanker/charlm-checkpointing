@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Union
-
+import matplotlib.pyplot as plt
 
 class Head(nn.Module):
     """ one head of self-attention """
@@ -242,7 +242,11 @@ class CharLM(nn.Module):
         self.train()
         return idx
     
-
+def plot_loss(losses):
+    plt.plot(losses)
+    plt.xlabel("Epochs")
+    plt.ylabel("Loss")
+    plt.show()
 
 if __name__ == "__main__":
     # testing the model
@@ -258,21 +262,39 @@ if __name__ == "__main__":
         prenormalize=False,
         device="cpu",
     )
+    losses = []
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
-    for _ in range(500):
+    for epoch in range(500):
         idx = torch.randint(0, 100, (64, 10))
         logits, loss = model(idx, targets=idx)
         print(logits.shape, loss)
         optimizer.zero_grad()
+        losses.append(loss.item())
         loss.backward()
         optimizer.step()
 
     #save model
-    torch.save(model.state_dict(), "model.pt")
+    state_dict = {"model": model.state_dict(), "optimizer": optimizer.state_dict(), "epoch": epoch}
+    torch.save(state_dict, "model.pt")
     #load model
-    model.load_state_dict(torch.load("model.pt"))
+    state_dict = torch.load("model.pt")
+    model.load_state_dict(state_dict["model"])
+    optimizer.load_state_dict(state_dict["optimizer"])
+    epoch = state_dict["epoch"]
     # Check loss now
     idx = torch.randint(0, 100, (64, 10))
     logits, loss = model(idx, targets=idx)
     print("Loss after loading model")
     print(logits.shape, loss)
+    # Start training again
+    for epoch in range(epoch, 1000):
+        idx = torch.randint(0, 100, (64, 10))
+        logits, loss = model(idx, targets=idx)
+        print(logits.shape, loss)
+        losses.append(loss.item())
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+    plot_loss(losses)
+    #Save plot
+    plt.savefig("loss.png")
