@@ -1,0 +1,38 @@
+2023-07-09 06:26:48,097 INFO    MainThread:593996 [wandb_setup.py:_flush():68] Configure stats pid to 593996
+2023-07-09 06:26:48,097 INFO    MainThread:593996 [wandb_setup.py:_flush():68] Loading settings from /home/sukthank/.config/wandb/settings
+2023-07-09 06:26:48,097 INFO    MainThread:593996 [wandb_setup.py:_flush():68] Loading settings from /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/settings
+2023-07-09 06:26:48,097 INFO    MainThread:593996 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-07-09 06:26:48,097 INFO    MainThread:593996 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'model.py', 'program': '/work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/model.py'}
+2023-07-09 06:26:48,097 INFO    MainThread:593996 [wandb_init.py:_log_setup():492] Logging user logs to /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062647-vd2rx56q/logs/debug.log
+2023-07-09 06:26:48,097 INFO    MainThread:593996 [wandb_init.py:_log_setup():493] Logging internal logs to /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062647-vd2rx56q/logs/debug-internal.log
+2023-07-09 06:26:48,097 INFO    MainThread:593996 [wandb_init.py:init():532] calling init triggers
+2023-07-09 06:26:48,097 INFO    MainThread:593996 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {}
+2023-07-09 06:26:48,098 INFO    MainThread:593996 [wandb_init.py:init():588] starting backend
+2023-07-09 06:26:48,098 INFO    MainThread:593996 [wandb_init.py:init():592] setting up manager
+2023-07-09 06:26:48,100 INFO    MainThread:593996 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-09 06:26:48,102 INFO    MainThread:593996 [wandb_init.py:init():599] backend started and connected
+2023-07-09 06:26:48,104 INFO    MainThread:593996 [wandb_init.py:init():687] updated telemetry
+2023-07-09 06:26:48,142 INFO    MainThread:593996 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-07-09 06:26:48,592 INFO    MainThread:593996 [wandb_run.py:_on_init():2134] communicating current version
+2023-07-09 06:26:48,716 INFO    MainThread:593996 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.15.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-07-09 06:26:48,716 INFO    MainThread:593996 [wandb_init.py:init():775] starting run threads in backend
+2023-07-09 06:26:56,893 WARNING MainThread:593996 [wandb_init.py:init():1154] interrupted
+Traceback (most recent call last):
+  File "/home/sukthank/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1133, in init
+    run = wi.init()
+  File "/home/sukthank/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 787, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/home/sukthank/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 273, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/sukthank/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 120, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/sukthank/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 116, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/home/sukthank/anaconda3/envs/neerat/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/sukthank/anaconda3/envs/neerat/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-07-09 06:27:00,972 WARNING MsgRouterThr:593996 [router.py:message_loop():77] message_loop has been closed

@@ -1,0 +1,187 @@
+2023-07-09 06:24:57,487 INFO    StreamThr :592322 [internal.py:wandb_internal():87] W&B internal server running at pid: 592322, started at: 2023-07-09 06:24:57.486455
+2023-07-09 06:24:57,488 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: status
+2023-07-09 06:24:57,489 INFO    WriterThread:592322 [datastore.py:open_for_write():85] open: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/run-eh5nton8.wandb
+2023-07-09 06:24:57,506 DEBUG   SenderThread:592322 [sender.py:send():336] send: header
+2023-07-09 06:24:57,506 DEBUG   SenderThread:592322 [sender.py:send():336] send: run
+2023-07-09 06:24:58,007 INFO    SenderThread:592322 [dir_watcher.py:__init__():216] watching files in: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files
+2023-07-09 06:24:58,007 INFO    SenderThread:592322 [sender.py:_start_run_threads():1067] run started: eh5nton8 with start time 1688876697.486224
+2023-07-09 06:24:58,007 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: summary_record
+2023-07-09 06:24:58,008 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: check_version
+2023-07-09 06:24:58,008 INFO    SenderThread:592322 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-07-09 06:24:58,009 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: check_version
+2023-07-09 06:24:58,138 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: run_start
+2023-07-09 06:24:58,139 DEBUG   HandlerThread:592322 [system_info.py:__init__():31] System info init
+2023-07-09 06:24:58,139 DEBUG   HandlerThread:592322 [system_info.py:__init__():46] System info init done
+2023-07-09 06:24:58,139 INFO    HandlerThread:592322 [system_monitor.py:start():151] Starting system monitor
+2023-07-09 06:24:58,140 INFO    SystemMonitor:592322 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-07-09 06:24:58,140 INFO    HandlerThread:592322 [system_monitor.py:probe():172] Collecting system info
+2023-07-09 06:24:58,141 INFO    SystemMonitor:592322 [interfaces.py:start():168] Started cpu
+2023-07-09 06:24:58,142 INFO    SystemMonitor:592322 [interfaces.py:start():168] Started disk
+2023-07-09 06:24:58,143 INFO    SystemMonitor:592322 [interfaces.py:start():168] Started memory
+2023-07-09 06:24:58,143 INFO    SystemMonitor:592322 [interfaces.py:start():168] Started network
+2023-07-09 06:24:58,146 DEBUG   HandlerThread:592322 [system_info.py:probe():195] Probing system
+2023-07-09 06:24:58,148 DEBUG   HandlerThread:592322 [system_info.py:_probe_git():180] Probing git
+2023-07-09 06:24:58,157 DEBUG   HandlerThread:592322 [system_info.py:_probe_git():188] Probing git done
+2023-07-09 06:24:58,157 DEBUG   HandlerThread:592322 [system_info.py:probe():241] Probing system done
+2023-07-09 06:24:58,157 DEBUG   HandlerThread:592322 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-76-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2023-07-09T04:24:58.146097', 'startedAt': '2023-07-09T04:24:57.350363', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/model.py', 'codePath': 'model.py', 'git': {'remote': 'https://github.com/rheasukthanker/charlm-checkpointing/', 'commit': '3b49e3529d2e0a91f056275a8b04937e3f13c5d2'}, 'email': 'rheasukthanker@gmail.com', 'root': '/work/dlclarge2/sukthank-tanglenas/charlm-checkpointing', 'host': 'kis3bat2', 'username': 'sukthank', 'executable': '/home/sukthank/anaconda3/envs/neerat/bin/python', 'cpu_count': 16, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2350.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}, {'current': 2350.0, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 190.03353118896484, 'used': 16.539932250976562}, 'memory': {'total': 125.77287673950195}}
+2023-07-09 06:24:58,157 INFO    HandlerThread:592322 [system_monitor.py:probe():182] Finished collecting system info
+2023-07-09 06:24:58,157 INFO    HandlerThread:592322 [system_monitor.py:probe():185] Publishing system info
+2023-07-09 06:24:58,157 DEBUG   HandlerThread:592322 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-09 06:24:58,193 DEBUG   HandlerThread:592322 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-09 06:24:58,193 DEBUG   HandlerThread:592322 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-09 06:24:59,009 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_created():275] file/dir created: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/wandb-summary.json
+2023-07-09 06:24:59,010 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_created():275] file/dir created: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/requirements.txt
+2023-07-09 06:24:59,010 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_created():275] file/dir created: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/conda-environment.yaml
+2023-07-09 06:25:14,944 DEBUG   HandlerThread:592322 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-09 06:25:14,972 INFO    HandlerThread:592322 [system_monitor.py:probe():187] Finished publishing system info
+2023-07-09 06:25:15,024 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_modified():292] file/dir modified: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/conda-environment.yaml
+2023-07-09 06:25:15,024 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_created():275] file/dir created: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/wandb-metadata.json
+2023-07-09 06:25:15,200 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: status_report
+2023-07-09 06:25:15,200 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-09 06:25:15,201 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: status_report
+2023-07-09 06:25:15,201 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-09 06:25:15,201 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: status_report
+2023-07-09 06:25:15,201 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-09 06:25:15,201 DEBUG   SenderThread:592322 [sender.py:send():336] send: files
+2023-07-09 06:25:15,201 INFO    SenderThread:592322 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-07-09 06:25:15,209 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-09 06:25:15,209 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: stop_status
+2023-07-09 06:25:15,460 DEBUG   SenderThread:592322 [sender.py:send():336] send: telemetry
+2023-07-09 06:25:15,838 INFO    wandb-upload_0:592322 [upload_job.py:push():138] Uploaded file /tmp/tmpkvj0knxywandb/7xczs8ms-wandb-metadata.json
+2023-07-09 06:25:17,027 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_created():275] file/dir created: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/output.log
+2023-07-09 06:25:18,156 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: status_report
+2023-07-09 06:25:18,632 DEBUG   SenderThread:592322 [sender.py:send():336] send: exit
+2023-07-09 06:25:18,632 INFO    SenderThread:592322 [sender.py:send_exit():559] handling exit code: 0
+2023-07-09 06:25:18,632 INFO    SenderThread:592322 [sender.py:send_exit():561] handling runtime: 20
+2023-07-09 06:25:18,634 INFO    SenderThread:592322 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-07-09 06:25:18,634 INFO    SenderThread:592322 [sender.py:send_exit():567] send defer
+2023-07-09 06:25:18,634 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:18,634 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-09 06:25:18,634 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:18,634 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-07-09 06:25:18,634 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 1
+2023-07-09 06:25:18,634 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:18,634 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-09 06:25:18,635 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:18,635 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-07-09 06:25:18,635 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 2
+2023-07-09 06:25:18,635 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:18,635 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-09 06:25:18,635 INFO    HandlerThread:592322 [system_monitor.py:finish():161] Stopping system monitor
+2023-07-09 06:25:18,635 DEBUG   SystemMonitor:592322 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-07-09 06:25:18,636 DEBUG   SystemMonitor:592322 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-07-09 06:25:18,636 DEBUG   SystemMonitor:592322 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-07-09 06:25:18,636 INFO    HandlerThread:592322 [interfaces.py:finish():175] Joined cpu
+2023-07-09 06:25:18,636 INFO    HandlerThread:592322 [interfaces.py:finish():175] Joined disk
+2023-07-09 06:25:18,636 INFO    HandlerThread:592322 [interfaces.py:finish():175] Joined memory
+2023-07-09 06:25:18,636 INFO    HandlerThread:592322 [interfaces.py:finish():175] Joined network
+2023-07-09 06:25:18,637 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:18,637 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-07-09 06:25:18,637 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 3
+2023-07-09 06:25:18,637 DEBUG   SenderThread:592322 [sender.py:send():336] send: stats
+2023-07-09 06:25:18,637 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:18,637 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-09 06:25:18,637 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:18,637 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-07-09 06:25:18,637 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 4
+2023-07-09 06:25:18,637 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:18,637 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-09 06:25:18,638 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:18,638 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-07-09 06:25:18,638 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 5
+2023-07-09 06:25:18,638 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:18,638 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-09 06:25:18,638 DEBUG   SenderThread:592322 [sender.py:send():336] send: summary
+2023-07-09 06:25:18,639 INFO    SenderThread:592322 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-07-09 06:25:18,639 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:18,639 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-07-09 06:25:18,640 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 6
+2023-07-09 06:25:18,640 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:18,640 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-09 06:25:18,640 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:18,640 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-07-09 06:25:18,647 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: status_report
+2023-07-09 06:25:18,857 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 7
+2023-07-09 06:25:18,857 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:18,857 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 7
+2023-07-09 06:25:18,857 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:18,858 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-07-09 06:25:19,050 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_modified():292] file/dir modified: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/wandb-summary.json
+2023-07-09 06:25:19,050 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_modified():292] file/dir modified: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/config.yaml
+2023-07-09 06:25:19,050 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_modified():292] file/dir modified: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/output.log
+2023-07-09 06:25:19,632 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-09 06:25:20,467 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 8
+2023-07-09 06:25:20,467 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: poll_exit
+2023-07-09 06:25:20,467 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:20,468 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 8
+2023-07-09 06:25:20,468 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:20,468 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-07-09 06:25:20,544 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 9
+2023-07-09 06:25:20,544 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:20,544 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 9
+2023-07-09 06:25:20,545 DEBUG   SenderThread:592322 [sender.py:send():336] send: artifact
+2023-07-09 06:25:20,633 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-09 06:25:21,052 INFO    Thread-13 :592322 [dir_watcher.py:_on_file_modified():292] file/dir modified: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/output.log
+2023-07-09 06:25:22,111 INFO    wandb-upload_0:592322 [upload_job.py:push():96] Uploaded file /home/sukthank/.local/share/wandb/artifacts/staging/tmpgdslv8q8
+2023-07-09 06:25:22,140 INFO    wandb-upload_1:592322 [upload_job.py:push():96] Uploaded file /home/sukthank/.local/share/wandb/artifacts/staging/tmpkyhlpawi
+2023-07-09 06:25:23,614 INFO    SenderThread:592322 [sender.py:send_artifact():1417] sent artifact job-https___github.com_rheasukthanker_charlm-checkpointing__model.py - {'id': 'QXJ0aWZhY3Q6NTA4NjU0NTA3', 'digest': '3698be442ba9b7f90f6119d6a26478c2', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjgxNTYwNjkz', 'latestArtifact': None}, 'version': 'latest'}
+2023-07-09 06:25:23,614 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:23,614 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-07-09 06:25:23,614 INFO    SenderThread:592322 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-07-09 06:25:24,054 INFO    SenderThread:592322 [dir_watcher.py:finish():392] scan: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files
+2023-07-09 06:25:24,055 INFO    SenderThread:592322 [dir_watcher.py:finish():406] scan save: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/config.yaml config.yaml
+2023-07-09 06:25:24,055 INFO    SenderThread:592322 [dir_watcher.py:finish():406] scan save: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/wandb-summary.json wandb-summary.json
+2023-07-09 06:25:24,055 INFO    SenderThread:592322 [dir_watcher.py:finish():406] scan save: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/requirements.txt requirements.txt
+2023-07-09 06:25:24,055 INFO    SenderThread:592322 [dir_watcher.py:finish():406] scan save: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/conda-environment.yaml conda-environment.yaml
+2023-07-09 06:25:24,055 INFO    SenderThread:592322 [dir_watcher.py:finish():406] scan save: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/wandb-metadata.json wandb-metadata.json
+2023-07-09 06:25:24,055 INFO    SenderThread:592322 [dir_watcher.py:finish():406] scan save: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/output.log output.log
+2023-07-09 06:25:24,055 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 10
+2023-07-09 06:25:24,056 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: poll_exit
+2023-07-09 06:25:24,056 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:24,061 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 10
+2023-07-09 06:25:24,064 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:24,064 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-07-09 06:25:24,064 INFO    SenderThread:592322 [file_pusher.py:finish():162] shutting down file pusher
+2023-07-09 06:25:24,632 INFO    wandb-upload_1:592322 [upload_job.py:push():138] Uploaded file /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/requirements.txt
+2023-07-09 06:25:24,767 INFO    wandb-upload_3:592322 [upload_job.py:push():138] Uploaded file /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/conda-environment.yaml
+2023-07-09 06:25:24,772 INFO    wandb-upload_4:592322 [upload_job.py:push():138] Uploaded file /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/output.log
+2023-07-09 06:25:24,792 INFO    wandb-upload_0:592322 [upload_job.py:push():138] Uploaded file /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/wandb-summary.json
+2023-07-09 06:25:24,808 INFO    wandb-upload_2:592322 [upload_job.py:push():138] Uploaded file /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/files/config.yaml
+2023-07-09 06:25:25,009 INFO    Thread-12 (_thread_body):592322 [sender.py:transition_state():587] send defer: 11
+2023-07-09 06:25:25,010 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:25,010 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 11
+2023-07-09 06:25:25,010 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:25,010 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-07-09 06:25:25,010 INFO    SenderThread:592322 [file_pusher.py:join():167] waiting for file pusher
+2023-07-09 06:25:25,010 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 12
+2023-07-09 06:25:25,011 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:25,011 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 12
+2023-07-09 06:25:25,011 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:25,011 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-07-09 06:25:25,165 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 13
+2023-07-09 06:25:25,166 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:25,166 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 13
+2023-07-09 06:25:25,166 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:25,166 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-07-09 06:25:25,166 INFO    SenderThread:592322 [sender.py:transition_state():587] send defer: 14
+2023-07-09 06:25:25,166 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 06:25:25,166 INFO    HandlerThread:592322 [handler.py:handle_request_defer():170] handle defer: 14
+2023-07-09 06:25:25,167 DEBUG   SenderThread:592322 [sender.py:send():336] send: final
+2023-07-09 06:25:25,167 DEBUG   SenderThread:592322 [sender.py:send():336] send: footer
+2023-07-09 06:25:25,167 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: defer
+2023-07-09 06:25:25,167 INFO    SenderThread:592322 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-07-09 06:25:25,168 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-09 06:25:25,168 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: poll_exit
+2023-07-09 06:25:25,168 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: server_info
+2023-07-09 06:25:25,168 DEBUG   SenderThread:592322 [sender.py:send_request():363] send_request: server_info
+2023-07-09 06:25:25,170 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: get_summary
+2023-07-09 06:25:25,171 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: sampled_history
+2023-07-09 06:25:25,382 INFO    MainThread:592322 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-07-09 06:25:25,382 INFO    MainThread:592322 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-07-09 06:25:25,383 INFO    MainThread:592322 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-07-09 06:25:25,383 DEBUG   HandlerThread:592322 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-09 06:25:25,383 INFO    HandlerThread:592322 [handler.py:finish():841] shutting down handler
+2023-07-09 06:25:26,169 INFO    WriterThread:592322 [datastore.py:close():299] close: /work/dlclarge2/sukthank-tanglenas/charlm-checkpointing/wandb/run-20230709_062457-eh5nton8/run-eh5nton8.wandb
+2023-07-09 06:25:26,382 INFO    SenderThread:592322 [sender.py:finish():1493] shutting down sender
+2023-07-09 06:25:26,383 INFO    SenderThread:592322 [file_pusher.py:finish():162] shutting down file pusher
+2023-07-09 06:25:26,383 INFO    SenderThread:592322 [file_pusher.py:join():167] waiting for file pusher
