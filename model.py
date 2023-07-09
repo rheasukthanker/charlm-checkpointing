@@ -248,7 +248,7 @@ def plot_loss(losses):
     plt.ylabel("Loss")
     plt.show()
 
-if __name__ == "__main__":
+'''if __name__ == "__main__":
     # testing the model
     model = CharLM(
         vocab_size=100,
@@ -297,4 +297,4 @@ if __name__ == "__main__":
         optimizer.step()
     plot_loss(losses)
     #Save plot
-    plt.savefig("loss.png")
+    plt.savefig("loss.png")'''
