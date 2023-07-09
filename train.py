@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # hyperparameters
 batch_size = 64 # how many independent sequences will we process in parallel?
 block_size = 256 # what is the maximum context length for predictions?
-max_iters = 200
+max_iters = 100
 eval_interval = 10
 learning_rate = 3e-4
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -77,7 +77,7 @@ losses_list_train = []
 # create a PyTorch optimizer
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, max_iters)
-for iter in range(100):
+for iter in range(50):
 
     # every once in a while evaluate the loss on train and val sets
     if iter % eval_interval == 0 or iter == max_iters - 1:
@@ -96,17 +96,18 @@ for iter in range(100):
     scheduler.step()
 
 # save the model
-state_dict = {"model": model.state_dict(), "optimizer": optimizer.state_dict(), "iter": iter, "scheduler": scheduler.state_dict()}
+state_dict = {"model": model.state_dict(), "optimizer": optimizer.state_dict(), "iter": iter, "scheduler": scheduler.state_dict(), "losses_list_train": losses_list_train, "losses_list_val": losses_list_val}
 model = CharLM(vocab_size, n_layer, block_size, n_embd, n_head, dropout=dropout, device=device)
 m = model.to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, max_iters)
-torch.save(state_dict, "model.pt")
 # load the model
 state_dict = torch.load("model.pt")
 model.load_state_dict(state_dict["model"])
 optimizer.load_state_dict(state_dict["optimizer"])
 scheduler.load_state_dict(state_dict["scheduler"])
+losses_list_train = state_dict["losses_list_train"]
+losses_list_val = state_dict["losses_list_val"]
 
 iter = state_dict["iter"]
 # Resume training
